@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('reddit-copy App', () => {
+describe('angular-login App', () => {
   let page: AppPage;
 
   beforeEach(() => {

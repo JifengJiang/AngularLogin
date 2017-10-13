@@ -1,19 +1,15 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<h1>{{title}}</h1>
 
-<form class="ui large form segment">
+<h1>
+  Welcome to {{title}}!
+</h1>
 
-  <div class="field">
-    <label for="title">Title:</label>
-    <input name="title" #newtitle/>
-  </div>
+<a routerLink="/register">register</a>
+<a routerLink="/login">login</a>
+<a routerLink="/">home</a>
 
-  <div class="field">
-    <label for="link">Link:</label>
-    <input name="link" #newlink/>
-  </div>
+<div>
+  Pages will appear below...
+</div>
 
-  <button (click)="addArticle(newtitle, newlink)"
-          class="ui positive right floated button">
-    Submit link
-  </button>
-</form>
+<router-outlet></router-outlet>
